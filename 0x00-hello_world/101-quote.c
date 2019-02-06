@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
   * main - Entry point, prints a string without `printf` or `puts`
