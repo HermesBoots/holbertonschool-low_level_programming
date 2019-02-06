@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  * main - Entry point, prints a string without `printf` or `puts`
+  * main - Entry point, prints a string without certain common functions
   *
   * Return: always 1
   */
