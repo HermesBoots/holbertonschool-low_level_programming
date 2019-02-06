@@ -23,3 +23,6 @@ Printing the size of various types using `printf`.
 
 ## Intel
 Compiling a C file and displaying its assembly in Intel format using `gcc -S -masm=intel`.
+
+## UNIX Is Basically a Simple Operating System, but You Have to Be a Genius to Understand the Simplicity
+Printing a string to standard error without the `put` or `printf` functions, instead using `fwrite`.
