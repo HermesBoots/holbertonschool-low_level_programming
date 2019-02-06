@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
   * main - Entry point
@@ -7,7 +8,9 @@
   */
 int main(void)
 {
-	char text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char text[59] = "and that piece of art is useful\"";
+
+	memcpy(&text[31], " - Dora Korpar, 2015-10-19\n", 27);
 
 	fwrite(text, 1, sizeof(text) - sizeof(char), stderr);
 	return (1);
