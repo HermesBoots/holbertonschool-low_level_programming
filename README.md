@@ -11,3 +11,9 @@ Compiling C source files but not assembling them using `gcc -S`.
 
 ## Name
 Compiling a C source file and making an executable out of it.
+
+## Hello, `puts`
+Printing a string and exiting successfully using `puts`.
+
+## Hello, `printf`
+Printing a string and exiting successfully using `printf`.
