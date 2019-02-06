@@ -17,3 +17,6 @@ Printing a string and exiting successfully using `puts`.
 
 ## Hello, `printf`
 Printing a string and exiting successfully using `printf`.
+
+## Size Is Not Grandeur, and Territory Does Not Make a Nation
+Printing the size of various types using `printf`.
