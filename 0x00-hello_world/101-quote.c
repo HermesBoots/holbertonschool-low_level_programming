@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  * main - Entry point, prints a string without certain common functions
+  * main - Entry point
   *
   * Return: always 1
   */
