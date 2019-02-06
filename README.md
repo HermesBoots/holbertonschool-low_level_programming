@@ -5,3 +5,6 @@ Preprocessing C source file but not continuing using `gcc -E`.
 
 ## Compiler
 Compiling C source file but not linking using `gcc -c`.
+
+## Assembler
+Compiling C source files but not assembling them using `gcc -S`.
