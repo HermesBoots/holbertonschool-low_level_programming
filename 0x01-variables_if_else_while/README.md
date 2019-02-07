@@ -35,3 +35,6 @@ Printing all base-10 numbers from 0 to 99, zero-padded. Limited to 5 `putchar` c
 
 ## Inventing Is Just a Combination of Brains and Materials. The More Brains You Use, the Less Material You Need
 Printing all combinations of two digits without repeats with only 5 `putchar` calls, a nested loop, and several conditions.
+
+## The Success Combination in Business: Do What You Do Better... and: Do More of What You Do
+Printing all combinations of three digits without repeats with only 6 `putchar` calls.
