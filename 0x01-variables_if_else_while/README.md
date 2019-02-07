@@ -25,10 +25,13 @@ Printing all base-10 digits using a loop and `putchar`, but avoiding `char` vari
 Printing the alphabet backward using `putchar` only twice and a loop.
 
 ## Hexadecimal
-Pringint all base-16 digits using two loops and only 3 `putchar` calls.
+Printing all base-16 digits using two loops and only 3 `putchar` calls.
 
 ## Patience, Persistence and Perspiration Make an Unbeatable Combination for Success
-Prints all base-10 digits separated by a comma and a space using only 4 `putchar` calls.
+Printing all base-10 digits separated by a comma and a space using only 4 `putchar` calls.
 
 ## 00...99
-Prints all base-10 numbers from 0 to 99, zero-padded. Limited to 5 `putchar` calls and uses a nested loop.
+Printing all base-10 numbers from 0 to 99, zero-padded. Limited to 5 `putchar` calls and uses a nested loop.
+
+## Inventing Is Just a Combination of Brains and Materials. The More Brains You Use, the Less Material You Need
+Printing all combinations of two digits without repeats with only 5 `putchar` calls, a nested loop, and several conditions.
