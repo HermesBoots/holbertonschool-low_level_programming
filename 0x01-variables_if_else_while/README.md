@@ -10,4 +10,7 @@ Printing the last digit of a random number and comparing it to five.
 Printing the lower case alphabet using just two calls to `putchar` and a loop.
 
 ## When I Was Having That Alphabet Soup, I Never Thought That It Would Pay Off
-Printing the lower case alphabet using just two calls to `puchar`, a loop, and a short conditional block.
+Printing the lower case alphabet using just two calls to `putchar`, a loop, and a short conditional block.
+
+## alphaBET
+Printing the alphabet in lower then upper case using just 3 calls to `putchar` and two loops.
