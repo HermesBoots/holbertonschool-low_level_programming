@@ -14,3 +14,12 @@ Printing the lower case alphabet using just two calls to `putchar`, a loop, and 
 
 ## alphaBET
 Printing the alphabet in lower then upper case using just 3 calls to `putchar` and two loops.
+
+## Numbers
+Printing all the base-10 digits using a loop and `putchar`.
+
+## Numberz
+Printing all base-10 digits using a loop and `putchar`, but avoiding `char` variables and constants.
+
+## Smile in the Mirror
+Printing the alphabet backward using `putchar` only twice and a loop.
