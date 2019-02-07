@@ -23,3 +23,6 @@ Printing all base-10 digits using a loop and `putchar`, but avoiding `char` vari
 
 ## Smile in the Mirror
 Printing the alphabet backward using `putchar` only twice and a loop.
+
+## Hexadecimal
+Pringint all base-16 digits using two loops and only 3 `putchar` calls.
