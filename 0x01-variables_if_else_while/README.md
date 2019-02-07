@@ -38,3 +38,6 @@ Printing all combinations of two digits without repeats with only 5 `putchar` ca
 
 ## The Success Combination in Business: Do What You Do Better... and: Do More of What You Do
 Printing all combinations of three digits without repeats with only 6 `putchar` calls.
+
+## Software Is Eating the World
+Printing all unique combinations of two two-digit numbers without repeats using only 8 `putchar` calls.
