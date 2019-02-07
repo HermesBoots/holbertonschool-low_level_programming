@@ -7,4 +7,7 @@ Printing whether a random number is positive, negative, or zero using `printf` a
 Printing the last digit of a random number and comparing it to five.
 
 ## I Sometimes Suffer from Insomnia. And When I Can't Fall Asleep, I Play What I Call the Alphabet Game
-Printing the lower case alphabet using just two calls to `printf` and a loop.
+Printing the lower case alphabet using just two calls to `putchar` and a loop.
+
+## When I Was Having That Alphabet Soup, I Never Thought That It Would Pay Off
+Printing the lower case alphabet using just two calls to `puchar`, a loop, and a short conditional block.
