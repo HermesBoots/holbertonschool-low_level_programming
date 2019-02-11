@@ -20,3 +20,6 @@ Creating a function to print the sign of a number.
 
 ## There Is No Such Thing as Absolute Value in This World. You Can Only Estimate What a Thing Is Worth to You
 Creating a function to print the absolute value of a number.
+
+## There Are Only 3 Colors, 10 Digits, and 7 Notes; It's What We Do with Them That's Important
+Creating a function that prints the last digit of a number.
