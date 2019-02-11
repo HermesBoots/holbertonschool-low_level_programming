@@ -14,3 +14,6 @@ Creating a function that returns true if a provided letter is lower case.
 
 ## `isalpha`
 Creating a function that returns true if a provided character is a letter.
+
+## Sign
+Creating a function to print the sign of a number.
