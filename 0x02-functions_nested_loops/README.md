@@ -38,3 +38,6 @@ Creating a function to print natural numbers from a given starting point to 98.
 
 ## The World Looks Like a Multiplication-Table or a Mathematical Equation, Turn It How You Will, Balances Itself
 Creating a function to print the multiplication table for a given number.
+
+## Nature Made the Natural Numbers: All Else Is the Work of Women
+Printing the sum of all multiples of 3 or 5 below 1024.
