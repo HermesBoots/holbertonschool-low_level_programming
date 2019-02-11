@@ -29,3 +29,6 @@ Creating a function to print every minute as if on a 24-hour clock.
 
 ## Learn Your Times Table
 Creating a function to print the 9 times table.
+
+## `a + b`
+Creating a function to return the sum of two numbers.
