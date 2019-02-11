@@ -32,3 +32,6 @@ Creating a function to print the 9 times table.
 
 ## `a + b`
 Creating a function to return the sum of two numbers.
+
+## Holberton School, 98 Battery Street, the OG
+Creating a function to print natural numbers from a given starting point to 98.
