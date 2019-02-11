@@ -17,3 +17,6 @@ Creating a function that returns true if a provided character is a letter.
 
 ## Sign
 Creating a function to print the sign of a number.
+
+## There Is No Such Thing as Absolute Value in This World. You Can Only Estimate What a Thing Is Worth to You
+Creating a function to print the absolute value of a number.
