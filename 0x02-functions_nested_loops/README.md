@@ -35,3 +35,6 @@ Creating a function to return the sum of two numbers.
 
 ## Holberton School, 98 Battery Street, the OG
 Creating a function to print natural numbers from a given starting point to 98.
+
+## The World Looks Like a Multiplication-Table or a Mathematical Equation, Turn It How You Will, Balances Itself
+Creating a function to print the multiplication table for a given number.
