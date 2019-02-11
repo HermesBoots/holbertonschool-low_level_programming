@@ -26,3 +26,6 @@ Creating a function that prints the last digit of a number.
 
 ## I'm Federal Agent Jack Bauer, and Today Is the Longest Day of My Life
 Creating a function to print every minute as if on a 24-hour clock.
+
+## Learn Your Times Table
+Creating a function to print the 9 times table.
