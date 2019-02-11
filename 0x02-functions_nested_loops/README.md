@@ -8,3 +8,6 @@ Printing the alphabet in a separate function.
 
 ## 10 x Alphabet
 Printing the alphabet ten times.
+
+## `islower`
+Creating a function that returns true if a provided letter is lower case.
