@@ -47,3 +47,6 @@ Printing 50 Fibonnaci numbers starting from 1 and 2.
 
 ## Even Liber Abbaci
 Printing the sum of the even Fibonnaci numbers that are less than 4,000,000.
+
+## In Computer Class, the First Assignment Was to Write a Program to Print the First 100 Fibonnaci Numbers. Instead, I Wrote a Program That Would Steal Passwords of Students. My Teacher Gave Me an A+
+Printing 98 Fibonnaci numbers starting from 1 and 2.
