@@ -28,4 +28,7 @@ Printing a diagonal line using back slashes.
 Printing a square made of octothorpes with given side lengths.
 
 ## Fizz-Buzz
-Print numbers, except replace multiples of 3 and 5 with a word.
+Printing numbers, except replace multiples of 3 and 5 with a word.
+
+## Triangles
+Printing a triangle made of octothorpes with a given height.
