@@ -41,3 +41,12 @@ Creating a function to print the multiplication table for a given number.
 
 ## Nature Made the Natural Numbers: All Else Is the Work of Women
 Printing the sum of all multiples of 3 or 5 below 1024.
+
+## In Computer Class, the First Assignment Was to Write a Program to Print the First 100 Fibonnaci Numbers. Instead, I Wrote a Program That Would Steal Passwords of Students. My Teacher Gave Me an A
+Printing 50 Fibonnaci numbers starting from 1 and 2.
+
+## Even Liber Abbaci
+Printing the sum of the even Fibonnaci numbers that are less than 4,000,000.
+
+## In Computer Class, the First Assignment Was to Write a Program to Print the First 100 Fibonnaci Numbers. Instead, I Wrote a Program That Would Steal Passwords of Students. My Teacher Gave Me an A+
+Printing 98 Fibonnaci numbers starting from 1 and 2.
