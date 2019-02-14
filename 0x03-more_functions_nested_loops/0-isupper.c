@@ -1,5 +1,3 @@
-#include "holberton.h"
-
 /**
  * _isupper - determine whether a character is an upper case letter
  * @c: the character to check
