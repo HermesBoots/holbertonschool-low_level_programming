@@ -35,3 +35,6 @@ Printing a triangle made of octothorpes with a given height.
 
 ## The Problem of Distinguishing Prime Numbers from Composite Numbers and of Resolving the Latter into Their Prime Factors Is Known to Be One of the Most Important and Useful in Arithmetic
 Finding the largest prime factor of 61285247513.
+
+## Numbers Have Life; They're Not Just Symbols on Paper
+Printing an integer of any value using only `_putchar`.
