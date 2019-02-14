@@ -8,3 +8,6 @@ Determining whether a character is a digit.
 
 ## Collaboration Is Multiplication
 Multiplying two integers.
+
+## The Numbers Speak for Themselves
+Printing the digits.
