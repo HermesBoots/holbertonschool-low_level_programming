@@ -20,3 +20,6 @@ Printing 0 to 14 ten times.
 
 ## The Shortest Distance Between Two Points Is a Straight Line
 Printing a given number of underscores.
+
+## I Feel Like I Am Diagonally Parked in a Parallel Universe
+Printing a diagonal line using back slashes.
