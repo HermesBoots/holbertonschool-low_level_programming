@@ -26,3 +26,6 @@ Printing a diagonal line using back slashes.
 
 ## You Are So Much Sunshine in Every Square Inch
 Printing a square made of octothorpes with given side lengths.
+
+## Fizz-Buzz
+Print numbers, except replace multiples of 3 and 5 with a word.
