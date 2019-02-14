@@ -17,3 +17,6 @@ Printing digits except 2 and 4.
 
 ## Numbers Constitute the Only Universal Language
 Printing 0 to 14 ten times.
+
+## The Shortest Distance Between Two Points Is a Straight Line
+Printing a given number of underscores.
