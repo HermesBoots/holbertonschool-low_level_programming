@@ -23,3 +23,9 @@ Printing every second character in a string, starting with the first.
 
 ## Winning Is Only Half of It. Having Fun Is the Other Half
 Printing the second half of a string.
+
+## Arrays Are Not Pointers
+Printing a given number elements from a given array.
+
+## `strcopy`
+Copying a string.
