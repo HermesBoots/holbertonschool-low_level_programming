@@ -17,3 +17,6 @@ Printing a string in reverse, then a line feed, to standard output.
 
 ## A Good Engineer Thinks in Reverse and Asks Himself about the Stylistic Consequences of the Components and Systems He Proposes
 Reversing a string in place.
+
+## Half the Lies They Tell about Me Aren't True
+Printing every second character in a string, starting with the first.
