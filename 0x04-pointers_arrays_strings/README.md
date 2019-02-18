@@ -32,3 +32,6 @@ Copying a string.
 
 ## Great Leaders Are Willing to Sacrifice the Numbers to Save the People. Poor Leaders Sacrifice the People to Save the Numbers
 Taking a string and returning the first number within it.
+
+## Don't Hate the Hacker, Hate the Code
+Generating random passwords that are accepted by an existing application.
