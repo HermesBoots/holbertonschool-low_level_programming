@@ -29,3 +29,6 @@ Printing a given number elements from a given array.
 
 ## `strcopy`
 Copying a string.
+
+## Great Leaders Are Willing to Sacrifice the Numbers to Save the People. Poor Leaders Sacrifice the People to Save the Numbers
+Taking a string and returning the first number within it.
