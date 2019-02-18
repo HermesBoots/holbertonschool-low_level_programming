@@ -14,3 +14,6 @@ Printing a string and then a line feed to standard output.
 
 ## I Can Only Go One Way. I've Not Got a Reverse Gear
 Printing a string in reverse, then a line feed, to standard output.
+
+## A Good Engineer Thinks in Reverse and Asks Himself about the Stylistic Consequences of the Components and Systems He Proposes
+Reversing a string in place.
