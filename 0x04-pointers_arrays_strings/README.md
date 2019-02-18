@@ -11,3 +11,6 @@ Getting the length of a string.
 
 ## I Do Not Fear Computers. I Fear the Lack of Them
 Printing a string and then a line feed to standard output.
+
+## I Can Only Go One Way. I've Not Got a Reverse Gear
+Printing a string in reverse, then a line feed, to standard output.
