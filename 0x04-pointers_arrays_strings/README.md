@@ -20,3 +20,6 @@ Reversing a string in place.
 
 ## Half the Lies They Tell about Me Aren't True
 Printing every second character in a string, starting with the first.
+
+## Winning Is Only Half of It. Having Fun Is the Other Half
+Printing the second half of a string.
