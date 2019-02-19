@@ -19,11 +19,11 @@ int _atoi(char *s)
 	for (; *sub >= '0' && *sub <= '9'; sub++)
 	{
 		ret *= 10;
-		ret += *sub - '0';
+		if (negative)
+			ret -= *sub - '0';
+		else
+			ret += *sub - '0';
 	}
-
-	if (negative)
-		ret = -ret;
 
 	return (ret);
 }
