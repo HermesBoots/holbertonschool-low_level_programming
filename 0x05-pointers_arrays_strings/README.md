@@ -35,3 +35,6 @@ Magically changing an array with undefined stack manipulation.
 
 ## It Is the Addition of Strangeness to Beauty That Constitutes the Romantic Character in Art
 Adding two huge integers passed as strings.
+
+## Noise Is a Buffer, More Effective Than Cubicles or Booth Walls
+Print a buffer of bytes in a way reminiscent of hex editors.
