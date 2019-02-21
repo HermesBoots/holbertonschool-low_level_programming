@@ -33,11 +33,11 @@ int char_sum(char a, char b, char *carry)
  * @src: the location to move from
  * @n: number of bytes to move
  */
-void move_over(char *p1, char *p2, int n)
+void move_over(char *dest, char *src, int n)
 {
 	while (n--)
-		*p1++ = *p2++;
-	p1[-1] = '\0';
+		*dest++ = *src++;
+	dest[-1] = '\0';
 }
 
 /**
