@@ -11,3 +11,6 @@ Copying a string, but with a limit to control buffer overflows.
 
 ## `strcmp`
 Comparing two strings.
+
+## I Am Kind of Paranaoid in Reverse. I Suspect People of Plotting to Make Me Happy
+Reversing an array of integers.
