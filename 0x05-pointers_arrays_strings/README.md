@@ -23,3 +23,6 @@ Making the first letter of each word in a string upper case.
 
 ## Mozart Composed His Music Not for the Elite, but for Everybody
 Converting a string to 1337 speak.
+
+## rot13
+Encode a string using rot13.
