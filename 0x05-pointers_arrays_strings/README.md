@@ -2,3 +2,6 @@
 
 ## `strcat`
 Concatenating two strings.
+
+## `strncat`
+Concatenating strings but with a limit to control buffer overflows.
