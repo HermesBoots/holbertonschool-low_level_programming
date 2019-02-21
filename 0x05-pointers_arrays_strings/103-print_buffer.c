@@ -10,6 +10,8 @@ void print_buffer(char *buff, int size)
 	char val;
 	int col, row;
 
+	if (size <= 0)
+		putchar('\n');
 	for (row = 0; row < size; row += 10)
 	{
 		printf("%08x: ", row);
