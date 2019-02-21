@@ -17,3 +17,6 @@ Reversing an array of integers.
 
 ## Always Look Up
 Changing string to upper case.
+
+## Expect the Best. Prepare for the Worst. Capitalize on What Comes
+Making the first letter of each word in a string upper case.
