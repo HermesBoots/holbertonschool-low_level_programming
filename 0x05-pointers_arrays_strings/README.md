@@ -26,3 +26,6 @@ Converting a string to 1337 speak.
 
 ## rot13
 Encode a string using rot13.
+
+## Numbers Have Life; They're Not Just Numbers on Paper
+Print an arbitrary integer.
