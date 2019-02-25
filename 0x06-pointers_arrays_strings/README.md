@@ -14,3 +14,6 @@ Getting number of characters at the start of a string that are in a certain list
 
 ## `strpbrk`
 Getting pointer to first appearance of one of a given set of characters.
+
+## `strstr`
+Finding first occurrence of a substring in a larger string.
