@@ -20,3 +20,6 @@ Finding first occurrence of a substring in a larger string.
 
 ## Chess Is Mental Torture
 Printing a chessboard.
+
+## The Line of Life Is a Ragged Diagonal between Duty and Desire
+Printing the sum of diagonals of a square matrix.
