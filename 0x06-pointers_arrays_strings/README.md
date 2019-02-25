@@ -26,3 +26,6 @@ Printing the sum of diagonals of a square matrix.
 
 ## Double Pointer, Double Fun
 Set a pointer to new string.
+
+## My Primary Goal of Hacking Was the Intellectual Curiosity, the Seduction of Adventure
+Cracking the password used by a program by reverse-engineering it.
