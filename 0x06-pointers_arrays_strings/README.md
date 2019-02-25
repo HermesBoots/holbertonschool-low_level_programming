@@ -23,3 +23,6 @@ Printing a chessboard.
 
 ## The Line of Life Is a Ragged Diagonal between Duty and Desire
 Printing the sum of diagonals of a square matrix.
+
+## Double Pointer, Double Fun
+Set a pointer to new string.
