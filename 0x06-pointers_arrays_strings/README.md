@@ -17,3 +17,6 @@ Getting pointer to first appearance of one of a given set of characters.
 
 ## `strstr`
 Finding first occurrence of a substring in a larger string.
+
+## Chess Is Mental Torture
+Printing a chessboard.
