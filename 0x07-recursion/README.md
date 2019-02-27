@@ -23,3 +23,6 @@ Determining the primality of a number using recursion.
 
 ## They Saw We Only Use a Fraction of Our Brain's True Potential. Now That's When We're Awake. When We're Asleep, We Can Do Almost Anything
 Determining whether a string is a palindrome.
+
+## Inception. Now, Before You Bother Telling Me It's Impossible...
+Comparing two strings considering * as a wildcard.
