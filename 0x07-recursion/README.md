@@ -20,3 +20,6 @@ Getting the square root of a number using recursion.
 
 ## Inception. Is It Possible?
 Determining the primality of a number using recursion.
+
+## They Saw We Only Use a Fraction of Our Brain's True Potential. Now That's When We're Awake. When We're Asleep, We Can Do Almost Anything
+Determining whether a string is a palindrome.

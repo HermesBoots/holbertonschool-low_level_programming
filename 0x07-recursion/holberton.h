@@ -9,5 +9,6 @@ int factorial(int n);
 int _pow_recursion(int base, int exp);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
+int is_palindrome(char *str);
 
 #endif
