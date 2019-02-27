@@ -22,5 +22,7 @@ int do_sqrt(int target, int test)
  */
 int _sqrt_recursion(int n)
 {
+	if (n == 0)
+		return (0);
 	return (do_sqrt(n, n));
 }
