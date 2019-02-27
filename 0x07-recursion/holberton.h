@@ -6,5 +6,6 @@ void _puts_recursion(char *str);
 void _print_rev_recursion(char *str);
 int _strlen_recursion(char *str);
 int factorial(int n);
+int _pow_recursion(int base, int exp);
 
 #endif

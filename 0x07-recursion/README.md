@@ -11,3 +11,6 @@ Getting a string's length using recursion.
 
 ## You Mustn't Be Afraid to Dream a Little Bigger, Darling
 Getting a factorial.
+
+## Once an Idea Has Taken Hold of the Brain It's Almost Impossible to Eradicate
+Getting the result of exponentiation using recursion.
