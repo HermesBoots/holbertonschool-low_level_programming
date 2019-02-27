@@ -14,3 +14,6 @@ Getting a factorial.
 
 ## Once an Idea Has Taken Hold of the Brain It's Almost Impossible to Eradicate
 Getting the result of exponentiation using recursion.
+
+## Your Subconscious Is Looking for the Dreamer
+Getting the square root of a number using recursion.
