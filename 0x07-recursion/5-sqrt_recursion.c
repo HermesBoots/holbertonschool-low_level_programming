@@ -7,11 +7,11 @@
  */
 int do_sqrt(int target, int test)
 {
-	if (test < 1)
+	if (test * test > target || test * test < test)
 		return (-1);
-	else if (test * test == target)
-		return (test);
-	return (do_sqrt(target, test - 1));
+	else if (test * test < target)
+		return (do_sqrt(target, test + 1));
+	return (test);
 }
 
 /**
@@ -22,7 +22,5 @@ int do_sqrt(int target, int test)
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0)
-		return (0);
-	return (do_sqrt(n, n));
+	return (do_sqrt(n, 0));
 }
