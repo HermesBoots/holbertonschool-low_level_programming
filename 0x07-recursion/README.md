@@ -8,3 +8,6 @@ Printing a string backwards using recursion.
 
 ## Dreams Feel Real While We're in Them. It's Only When We Wake Up That We Realize Something Was Actually Strange
 Getting a string's length using recursion.
+
+## You Mustn't Be Afraid to Dream a Little Bigger, Darling
+Getting a factorial.
