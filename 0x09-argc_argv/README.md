@@ -1,4 +1,7 @@
 # C - `argc`, `argv`
 
 ## It Ain't What They Call You, It's What You Answer To
-Printin a program's own name.
+Printing a program's own name.
+
+## Silence Is Argument Carried out by Other Means
+Printing the number of arguments passed to a program.
