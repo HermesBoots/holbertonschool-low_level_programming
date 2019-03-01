@@ -5,3 +5,6 @@ Printing a program's own name.
 
 ## Silence Is Argument Carried out by Other Means
 Printing the number of arguments passed to a program.
+
+## The Best Argument against Democracy Is a Five-Minutes Conversation with the Average Voter
+Printing all of a program's arguments.
