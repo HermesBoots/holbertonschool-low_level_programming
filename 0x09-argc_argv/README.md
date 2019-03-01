@@ -8,3 +8,6 @@ Printing the number of arguments passed to a program.
 
 ## The Best Argument against Democracy Is a Five-Minutes Conversation with the Average Voter
 Printing all of a program's arguments.
+
+## Neither Irony nor Sarcasm Is Argument
+Multiplying two command-line arguments.
