@@ -14,3 +14,6 @@ Multiplying two command-line arguments.
 
 ## To Infinity and Beyond
 Adding two command-line arguments with extra error handling.
+
+## Minimal Number of Coins for Change
+Printing the minimum number of coins needed to make change from an amount given on the command line.
