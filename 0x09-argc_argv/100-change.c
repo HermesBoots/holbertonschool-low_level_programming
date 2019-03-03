@@ -1,4 +1,5 @@
 #include <ctype.h>
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
 
 	while (sofar < amount)
 	{
-		if (sofar + coins[index] <= amount)
+		if (INT_MAX - sofar >= coins[index] && sofar + coins[index] <= amount)
 		{
 			count++;
 			sofar += coins[index];
