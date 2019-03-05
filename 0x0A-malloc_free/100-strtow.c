@@ -1,6 +1,17 @@
 #include <stdlib.h>
 
 /**
+ * _isspace - check if character is white space
+ * @c: character to check
+ *
+ * Return: 1 if character is white space, 0 if it isn't
+ */
+int _isspace(int c)
+{
+	return (c == ' ');
+}
+
+/**
  * count_words - count the number of words in a string
  * @str: string to examine, must be a string
  *
@@ -13,31 +24,16 @@ int count_words(char *str)
 
 	for (sub = str; *sub != '\0'; sub++)
 	{
-		if (in && *sub == ' ')
+		if (in && _isspace(*sub))
 		{
 			in = 0;
 		}
-		else if (!in && *sub != ' ')
+		else if (!in && !_isspace(*sub))
 		{
 			in = 1;
 			ret++;
 		}
 	}
-	return (ret);
-}
-
-/**
- * _strlen - get the length of a string
- * @str: string to examine, must be a string
- *
- * Return: length of str
- */
-int _strlen(char *str)
-{
-	int ret;
-
-	for (ret = 0; str[ret] != '\0'; ret++)
-		;
 	return (ret);
 }
 
@@ -51,7 +47,22 @@ int word_len(char *str)
 {
 	int ret;
 
-	for (ret = 0; str[ret] != '\0' && str[ret] != ' '; ret++)
+	for (ret = 0; str[ret] != '\0' && !_isspace(str[ret]); ret++)
+		;
+	return (ret);
+}
+
+/**
+ * _strlen - get length of a string
+ * @str: string to examine, must be a string and not NULL
+ *
+ * Return: length of string
+ */
+int _strlen(char *str)
+{
+	int ret;
+
+	for (ret = 0; str[ret] != '\0'; ret++)
 		;
 	return (ret);
 }
@@ -67,31 +78,30 @@ char **strtow(char *str)
 	char **ret, *sub, *tail;
 	int i, len;
 
-	if (str == NULL)
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	len = _strlen(str);
-	if (len == 0)
+	tail = malloc(len + 1);
+	if (tail == NULL)
 		return (NULL);
 	len = count_words(str);
+	if (len < 1)
+	{
+		free(tail);
+		return (NULL);
+	}
 	ret = malloc((len + 1) * sizeof(char *));
 	if (ret == NULL)
 		return (NULL);
-	for (sub = str; *sub == ' '; sub++)
+	for (sub = str; _isspace(*sub); sub++)
 		;
 	for (i = 0; i < len; i++)
 	{
-		ret[i] = tail = malloc(word_len(sub) + 1);
-		if (tail == NULL)
-		{
-			for (len = 0; len < i; len++)
-				free(ret[len]);
-			free(ret);
-			return (NULL);
-		}
-		for (; *sub != ' ' && *sub != '\0'; sub++)
+		ret[i] = tail;
+		for (; !_isspace(*sub) && *sub != '\0'; sub++)
 			*tail++ = *sub;
-		*tail = '\0';
-		for (; *sub == ' '; sub++)
+		*tail++ = '\0';
+		for (; _isspace(*sub); sub++)
 			;
 	}
 	ret[len] = NULL;
