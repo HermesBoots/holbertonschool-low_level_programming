@@ -22,7 +22,7 @@ size_t count_words(char const *str)
 		else if (!in && !isspace(*sub))
 		{
 			in = 1;
-			ret ++;
+			ret++;
 		}
 	}
 	return (ret);
