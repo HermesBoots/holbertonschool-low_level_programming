@@ -88,7 +88,7 @@ char **strtow(char *str)
 			free(ret);
 			return (NULL);
 		}
-		for (; *sub != ' '; sub++)
+		for (; *sub != ' ' && *sub != '\0'; sub++)
 			*tail++ = *sub;
 		*tail = '\0';
 		for (; *sub == ' '; sub++)
