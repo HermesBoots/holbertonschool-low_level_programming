@@ -6,11 +6,10 @@
  *
  * Return: number of words in string
  */
-size_t count_words(char const *str)
+int count_words(char *str)
 {
 	char const *sub;
-	int in = 0;
-	size_t ret = 0;
+	int in = 0, ret = 0;
 
 	for (sub = str; *sub != '\0'; sub++)
 	{
@@ -33,11 +32,26 @@ size_t count_words(char const *str)
  *
  * Return: length of str
  */
-size_t _strlen(char const *str)
+int _strlen(char *str)
 {
-	size_t ret;
+	int ret;
 
 	for (ret = 0; str[ret] != '\0'; ret++)
+		;
+	return (ret);
+}
+
+/**
+ * word_len - get the length of a word
+ * @str: pointer to beginning of word
+ *
+ * Return: length of word
+ */
+int word_len(char *str)
+{
+	int ret;
+
+	for (ret = 0; str[ret] != '\0' && str[ret] != ' '; ret++)
 		;
 	return (ret);
 }
@@ -51,15 +65,12 @@ size_t _strlen(char const *str)
 char **strtow(char *str)
 {
 	char **ret, *sub, *tail;
-	size_t i, len;
+	int i, len;
 
 	if (str == NULL)
 		return (NULL);
 	len = _strlen(str);
 	if (len == 0)
-		return (NULL);
-	tail = malloc(len + 1);
-	if (tail == NULL)
 		return (NULL);
 	len = count_words(str);
 	ret = malloc((len + 1) * sizeof(char *));
@@ -69,10 +80,17 @@ char **strtow(char *str)
 		;
 	for (i = 0; i < len; i++)
 	{
-		ret[i] = tail;
+		ret[i] = tail = malloc(word_len(sub));
+		if (tail == NULL)
+		{
+			for (len = 0; len < i; len++)
+				free(ret[len]);
+			free(ret);
+			return (NULL);
+		}
 		for (; *sub != ' '; sub++)
 			*tail++ = *sub;
-		*tail++ = '\0';
+		*tail = '\0';
 		for (; *sub == ' '; sub++)
 			;
 	}
