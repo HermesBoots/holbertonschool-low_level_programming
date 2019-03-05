@@ -80,7 +80,7 @@ char **strtow(char *str)
 		;
 	for (i = 0; i < len; i++)
 	{
-		ret[i] = tail = malloc(word_len(sub));
+		ret[i] = tail = malloc(word_len(sub) + 1);
 		if (tail == NULL)
 		{
 			for (len = 0; len < i; len++)
