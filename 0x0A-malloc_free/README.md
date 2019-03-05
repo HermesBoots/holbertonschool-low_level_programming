@@ -14,3 +14,6 @@ Allocating a two-dimensional array with given dimensions.
 
 ## It's Not Bragging If You Can Back It Up
 Freeing the array allocated in the previous task.
+
+## It Isn't the Mountains Ahead to Climb That Wear You Out; It's the Pebble in Your Shoe
+Concatenating all strings in a list into newly-allocated memory.
