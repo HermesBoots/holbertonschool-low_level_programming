@@ -17,3 +17,6 @@ Freeing the array allocated in the previous task.
 
 ## It Isn't the Mountains Ahead to Climb That Wear You Out; It's the Pebble in Your Shoe
 Concatenating all strings in a list into newly-allocated memory.
+
+## I Will Show You How Great I Am
+Splitting a string into an array of words.
