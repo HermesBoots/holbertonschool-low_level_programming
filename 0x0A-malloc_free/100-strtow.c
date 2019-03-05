@@ -1,4 +1,3 @@
-#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -15,11 +14,11 @@ size_t count_words(char const *str)
 
 	for (sub = str; *sub != '\0'; sub++)
 	{
-		if (in && isspace(*sub))
+		if (in && *sub == ' ')
 		{
 			in = 0;
 		}
-		else if (!in && !isspace(*sub))
+		else if (!in && *sub != ' ')
 		{
 			in = 1;
 			ret++;
@@ -66,15 +65,15 @@ char **strtow(char *str)
 	ret = malloc((len + 1) * sizeof(char *));
 	if (ret == NULL)
 		return (NULL);
-	for (sub = str; isspace(*sub); sub++)
+	for (sub = str; *sub == ' '; sub++)
 		;
 	for (i = 0; i < len; i++)
 	{
 		ret[i] = tail;
-		for (; !isspace(*sub); sub++)
+		for (; *sub != ' '; sub++)
 			*tail++ = *sub;
 		*tail++ = '\0';
-		for (; isspace(*sub); sub++)
+		for (; *sub == ' '; sub++)
 			;
 	}
 	ret[len] = NULL;
