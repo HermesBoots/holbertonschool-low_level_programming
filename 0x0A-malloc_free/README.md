@@ -8,3 +8,6 @@ Copying a string into newly-allocated memory.
 
 ## He Who Is Not Courageous Enough to Take Risks Will Accomplish Nothing in Life
 Concatenating two strings and storing the result in newly-allocated memory.
+
+## If You Even Dream of Beating Me You'd Better Wake Up and Apologize
+Allocating a two-dimensional array with given dimensions.
