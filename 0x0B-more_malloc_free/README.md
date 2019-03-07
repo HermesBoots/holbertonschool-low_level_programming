@@ -2,3 +2,6 @@
 
 ## Trust No One
 Making a `malloc` wrapper that checks for allocation errors.
+
+## `string_nconcat`
+Concatenating some bytes into new memory.
