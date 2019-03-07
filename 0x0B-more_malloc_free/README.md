@@ -14,3 +14,6 @@ Allocating a range of consecutive integers.
 
 ## `_realloc`
 Allocating more memory to store data from a previous allocation.
+
+## We Must Accept Finite Disappointment, but Never Lose Infinite Hope
+Multiplying two arbitrary-precision integers.
