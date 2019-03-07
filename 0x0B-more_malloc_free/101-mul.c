@@ -53,6 +53,8 @@ void print_int(char *str)
 			leading = 0;
 		str++;
 	}
+	if (leading)
+		_putchar('0');
 }
 
 /**
