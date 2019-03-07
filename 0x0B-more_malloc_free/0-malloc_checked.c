@@ -3,6 +3,8 @@
 /**
  * malloc_checked - wrap malloc to check for errors
  * @b: number of bytes to allocate
+ *
+ * Return: pointer to new memory
  */
 void *malloc_checked(unsigned int b)
 {
