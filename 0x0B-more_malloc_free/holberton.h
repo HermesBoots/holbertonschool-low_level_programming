@@ -11,12 +11,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void error(void);
 unsigned int isnumeric(char *str);
 void print_int(char *str);
-void bigadd(char *op1, char *op2, unsigned int len);
+void bigadd(char *op1, unsigned int op2, unsigned int power, unsigned int len);
 void bigmul(
 		char *op1, unsigned int len1,
 		char *op2, unsigned int len2,
-		char *product, unsigned int lenp,
-		char *sum
+		char *sum, unsigned int lens
 );
 
 #endif

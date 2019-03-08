@@ -61,21 +61,34 @@ void print_int(char *str)
  * bigadd - add two arbitrary-precision numbers
  * @op1: first operand, stores result
  * @op2: second operand
+ * @power: order of magnitude of op2
  * @len: length of operands
  */
-void bigadd(char *op1, char *op2, unsigned int len)
+void bigadd(char *op1, unsigned int op2, unsigned int power, unsigned int len)
 {
 	char carry = 0;
 	unsigned int index, isum;
 
-	for (index = len - 1; index != _UINT_MAX; index--)
+	index = len - power - 1;
+	isum = op1[index] - '0' + op2 % 10;
+	if (isum >= 10)
+		carry = 1;
+	op1[index] = isum % 10 + '0';
+	index--;
+	isum = op1[index] - '0' + op2 / 10 + carry;
+	if (isum >= 10)
+		carry = 1;
+	else
+		carry = 0;
+	op1[index] = isum % 10 + '0';
+	index--;
+	while (carry)
 	{
-		isum = (op1[index] - '0') + (op2[index] - '0') + carry;
-		if (isum >= 10)
-			carry = 1;
-		else
+		isum = op1[index] - '0' + carry;
+		if (isum < 10)
 			carry = 0;
 		op1[index] = isum % 10 + '0';
+		index--;
 	}
 }
 
@@ -85,30 +98,24 @@ void bigadd(char *op1, char *op2, unsigned int len)
  * @len1: length of first operand
  * @op2: second operand
  * @len2: length of second operand
- * @product: string that stores individual digit products
- * @lenp: length of product and sum strings
  * @sum: string that stores sum of products, final answer
+ * @lens: length of sum string
  */
 void bigmul(
 		char *op1, unsigned int len1,
 		char *op2, unsigned int len2,
-		char *product, unsigned int lenp,
-		char *sum
+		char *sum, unsigned int lens
 )
 {
-	unsigned int digit1, digit2, index, iproduct;
+	unsigned int digit1, digit2, power, product;
 
 	for (digit1 = len1 - 1; digit1 != _UINT_MAX; digit1--)
 	{
 		for (digit2 = len2 - 1; digit2 != _UINT_MAX; digit2--)
 		{
-			iproduct = (op1[digit1] - '0') * (op2[digit2] - '0');
-			index = lenp - (len1 - digit1 + len2 - digit2 - 1);
-			product[index - 1] = iproduct / 10 + '0';
-			product[index] = iproduct % 10 + '0';
-			bigadd(sum, product, lenp);
-			product[index - 1] = '0';
-			product[index] = '0';
+			product = (op1[digit1] - '0') * (op2[digit2] - '0');
+			power = (len1 - digit1) + (len2 - digit2) - 2;
+			bigadd(sum, product, power, lens);
 		}
 	}
 	print_int(sum);
@@ -124,8 +131,8 @@ void bigmul(
  */
 int main(int argc, char *argv[])
 {
-	char *product, *sum;
-	unsigned int i, len1, len2, lenp;
+	char *sum;
+	unsigned int i, len1, len2, lens;
 
 	if (argc != 3)
 		error();
@@ -135,28 +142,18 @@ int main(int argc, char *argv[])
 	len2 = isnumeric(argv[2]);
 	if (len2 == 0)
 		error();
-	product = malloc(len1 + len2 + 1);
-	sum = malloc(len1 + len2 + 1);
-	if (product == NULL || sum == NULL)
-	{
-		free(product);
-		free(sum);
+	lens = len1 + len2;
+	sum = malloc(lens + 1);
+	if (sum == NULL)
 		error();
-	}
-	lenp = len1 + len2;
-	product[len1 + len2] = '\0';
-	sum[len1 + len2] = '\0';
-	for (i = 0; i < len1 + len2; i++)
-		product[i] = '0';
-	for (i = 0; i < len1 + len2; i++)
+	sum[lens] = '\0';
+	for (i = 0; i < lens; i++)
 		sum[i] = '0';
 	bigmul(
 			argv[1], len1,
 			argv[2], len2,
-			product, lenp,
-			sum
+			sum, lens
 	);
-	free(product);
 	free(sum);
 	return (0);
 }
