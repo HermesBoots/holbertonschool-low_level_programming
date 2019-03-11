@@ -11,3 +11,6 @@ Printing the name of a source file.
 
 ## Function-Like Macro
 Creating a macro to calculate absolute value.
+
+## `SUM`
+Creating a macro to calculate a sum of two numbers.
