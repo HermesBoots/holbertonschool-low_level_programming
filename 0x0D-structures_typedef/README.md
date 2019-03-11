@@ -11,3 +11,6 @@ Printing a dog structure.
 
 ## Outside of a Dog, a Book Is a Man's Best Friend. Inside of a Dog It's Too Dark to Read
 Creating a simple `typedef`.
+
+## A Door Is What a Dog Is Perpetually on the Wrong Side Of
+Creating a new dog structure instance.
