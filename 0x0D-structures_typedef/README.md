@@ -8,3 +8,6 @@ Initializing a dog structure.
 
 ## A Dog Will Teach You Unconditional Love. If You Can Have That in Your Life, Things Won't Be Too Bad
 Printing a dog structure.
+
+## Outside of a Dog, a Book Is a Man's Best Friend. Inside of a Dog It's Too Dark to Read
+Creating a simple `typedef`.
