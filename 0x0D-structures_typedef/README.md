@@ -14,3 +14,6 @@ Creating a simple `typedef`.
 
 ## A Door Is What a Dog Is Perpetually on the Wrong Side Of
 Creating a new dog structure instance.
+
+## How Many Legs Does a Dog Have If You Call His Tail a Leg? Four. Saying That a Tail Is a Leg Doesn't Make It a Leg
+Freeing dog structure instances.
