@@ -2,6 +2,30 @@
 #include "dog.h"
 
 /**
+ * _strdup - duplicate string to new memory
+ * @str: string to copy
+ *
+ * Return: pointer to copy or NULLif str is NULL orif allocation fails
+ */
+char *_strdup(char *str)
+{
+	unsigned int len;
+	char *copy;
+
+	if (str == NULL)
+		return (NULL);
+	for (len = 0; str[len] != '\0'; len++)
+		;
+	copy = malloc(sizeof(*copy) * len + sizeof(*copy) * 1);
+	if (copy == NULL)
+		return (NULL);
+	for (len = 0; str[len] != '\0'; len++)
+		copy[len] = str[len];
+	copy[len] = '\0';
+	return (copy);
+}
+
+/**
  * new_dog - creates a new instance of struct dog
  * @name: new dog name
  * @age: new dog age
@@ -13,37 +37,33 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	char *copy;
 	dog_t *ret;
-	int len;
 
 	ret = malloc(sizeof(*ret));
 	if (ret == NULL)
 		return (NULL);
+	ret->name = NULL;
 	if (name != NULL)
 	{
-		for (len = 0; name[len] != '\0'; len++)
-			;
-		copy = malloc(sizeof(*name) * len + sizeof(*name) * 1);
+		copy = _strdup(name);
 		if (copy == NULL)
+		{
+			free(ret);
 			return (NULL);
-		for (len = 0; name[len] != '\0'; len++)
-			copy[len] = name[len];
-		copy[len] = '\0';
-		name = copy;
+		}
+		ret->name = copy;
 	}
-	ret->name = name;
-	ret->age = age;
+	ret->owner = NULL;
 	if (owner != NULL)
 	{
-		for (len = 0; owner[len] != '\0'; len++)
-			;
-		copy = malloc(sizeof(*owner) * len + sizeof(*owner) * 1);
+		copy = _strdup(owner);
 		if (copy == NULL)
+		{
+			free(ret->name);
+			free(ret);
 			return (NULL);
-		for (len = 0; owner[len] != '\0'; len++)
-			copy[len] = owner[len];
-		copy[len] = '\0';
-		owner = copy;
+		}
+		ret->owner = owner;
 	}
-	ret->owner = owner;
+	ret->age = age;
 	return (ret);
 }
