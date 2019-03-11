@@ -1,5 +1,9 @@
 #include "dog.h"
 
+#ifndef NULL
+#define NULL ((void *)0)
+#endif
+
 /**
  * init_dog - initializes a struct dog with given values
  * @d: pointer to struct dog
