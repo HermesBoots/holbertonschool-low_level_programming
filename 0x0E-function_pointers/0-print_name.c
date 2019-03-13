@@ -1,3 +1,5 @@
+#define NULL ((void *)0)
+
 /**
  * print_name - passes an argument to another function
  * @name: string to pass
