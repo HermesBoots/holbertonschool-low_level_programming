@@ -7,4 +7,7 @@ Writing a function to call another function.
 Calling a function on each item of an array.
 
 ## To Hell with Circumstances, I Create Opportunities
-Search for an integer with comparison function.
+Searching for an integer with comparison function.
+
+## A Goal Is Not Always Meant to Be Reached, It Often Serves Simply as Something to Aim At
+Writing a calculator program with function pointers.
