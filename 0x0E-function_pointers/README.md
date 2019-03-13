@@ -2,3 +2,6 @@
 
 ## What's My Name
 Writing a function to call another function.
+
+## If You Spend Too Much Time Thinking about a Thing, You'll Never Get It Done
+Calling a function on each item of an array.
