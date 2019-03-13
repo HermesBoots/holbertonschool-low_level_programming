@@ -11,3 +11,6 @@ Searching for an integer with comparison function.
 
 ## A Goal Is Not Always Meant to Be Reached, It Often Serves Simply as Something to Aim At
 Writing a calculator program with function pointers.
+
+## Most Hackers Are Young Because Young People Tend to Be Adaptable. As Long as You Remain Adaptable, You Can Always Be a Good Hacker
+Printing the machine code of a program's own main function.
