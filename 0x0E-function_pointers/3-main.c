@@ -18,6 +18,11 @@ int main(int argc, char *argv[])
 		puts("Error");
 		return (98);
 	}
+	if (argv[2][0] == '\0' || argv[2][1] != '\0')
+	{
+		puts("Error");
+		return (99);
+	}
 	op = get_op_func(argv[2]);
 	if (op == NULL)
 	{
