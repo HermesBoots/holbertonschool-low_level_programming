@@ -16,9 +16,14 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (2);
+		return (1);
 	}
 	count = atoi(argv[1]);
+	if (count < 0)
+	{
+		printf("Error\n");
+		return (2);
+	}
 	code = (unsigned char *)&main;
 	while (count--)
 	{
