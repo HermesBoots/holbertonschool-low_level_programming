@@ -7,16 +7,14 @@
  */
 void print_all(char const * const format, ...)
 {
-	char const *sep = "", *str, *sub;
+	char const *sep = ", ", *str, *sub;
 	va_list list;
 
 	va_start(list, format);
 	sub = format;
 	while (format && *sub != '\0')
 	{
-		if (*sub == 'c' || *sub == 'i' || *sub == 'f' || *sub == 's')
-			printf("%s", sep);
-		switch (*sub++)
+		switch (*sub)
 		{
 		case 'c':
 			printf("%c", va_arg(list, int));
@@ -37,7 +35,9 @@ void print_all(char const * const format, ...)
 			printf("%s", str);
 			break;
 		}
-		sep = ", ";
+		if (sub[1] && (*sub == 'c' || *sub == 'i' || *sub == 'f' || *sub == 's'))
+			printf("%s", sep);
+		sub++;
 	}
 	printf("\n");
 	va_end(list);
