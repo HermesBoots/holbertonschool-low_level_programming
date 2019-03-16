@@ -8,13 +8,20 @@
 void print_all(char const * const format, ...)
 {
 	char const accept[] = "cifs";
-	char const *a, *str, *sub;
+	char const *a, *sep = "", *str, *sub;
 	va_list list;
 
 	va_start(list, format);
 	sub = format;
 	while (*sub != '\0')
 	{
+		a = accept;
+		while (*a != '\0')
+		{
+			if (*sub == *a)
+				printf("%s", sep);
+			a++;
+		}
 		switch (*sub)
 		{
 		case 'c':
@@ -28,20 +35,16 @@ void print_all(char const * const format, ...)
 			break;
 		case 's':
 			str = va_arg(list, char const *);
-			if (str)
-				printf("%s", str);
-			else
+			if (str == NULL)
+			{
 				printf("(nil)");
+				break;
+			}
+			printf("%s", str);
 			break;
 		}
-		a = accept;
-		while (*a != '\0')
-		{
-			if (*sub == *a && sub[1] != '\0')
-				printf(", ");
-			a++;
-		}
 		sub++;
+		sep = ", ";
 	}
 	printf("\n");
 	va_end(list);
