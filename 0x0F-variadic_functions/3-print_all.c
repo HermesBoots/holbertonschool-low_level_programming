@@ -10,15 +10,13 @@ void print_all(char const * const format, ...)
 	char const *sep = "", *str, *sub;
 	va_list list;
 
-	while (sub == NULL)
-		sub = "";
 	va_start(list, format);
 	sub = format;
-	while (*sub != '\0')
+	while (format && *sub != '\0')
 	{
 		if (*sub == 'c' || *sub == 'i' || *sub == 'f' || *sub == 's')
 			printf("%s", sep);
-		switch (*sub)
+		switch (*sub++)
 		{
 		case 'c':
 			printf("%c", va_arg(list, int));
@@ -30,7 +28,7 @@ void print_all(char const * const format, ...)
 			printf("%f", va_arg(list, double));
 			break;
 		case 's':
-			str = va_arg(list, char const *);
+			str = va_arg(list, char *);
 			if (str == NULL)
 			{
 				printf("(nil)");
@@ -39,7 +37,6 @@ void print_all(char const * const format, ...)
 			printf("%s", str);
 			break;
 		}
-		sub++;
 		sep = ", ";
 	}
 	printf("\n");
