@@ -7,21 +7,17 @@
  */
 void print_all(char const * const format, ...)
 {
-	char const accept[] = "cifs";
-	char const *a, *sep = "", *str, *sub;
+	char const *sep = "", *str, *sub;
 	va_list list;
 
+	while (sub == NULL)
+		sub = "";
 	va_start(list, format);
 	sub = format;
 	while (*sub != '\0')
 	{
-		a = accept;
-		while (*a != '\0')
-		{
-			if (*sub == *a)
-				printf("%s", sep);
-			a++;
-		}
+		if (*sub == 'c' || *sub == 'i' || *sub == 'f' || *sub == 's')
+			printf("%s", sep);
 		switch (*sub)
 		{
 		case 'c':
