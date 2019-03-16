@@ -7,7 +7,7 @@
  */
 void print_all(char const * const format, ...)
 {
-	static char const accept[] = "cifs";
+	char const accept[] = "cifs";
 	char const *a, *str, *sub;
 	va_list list;
 
