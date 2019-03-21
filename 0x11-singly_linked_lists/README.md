@@ -14,3 +14,6 @@ Appending to a list.
 
 ## Free List
 Freeing all nodes and strings in a list.
+
+## The Hare and the Tortoise
+Use GCC attributes to run a C function before `main` is called.
