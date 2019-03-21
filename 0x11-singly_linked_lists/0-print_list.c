@@ -10,7 +10,7 @@
  */
 size_t print_list(list_t const *h)
 {
-	size_t len, ret = 0;
+	size_t ret = 0;
 
 	for (; h != NULL; h = h->next)
 	{
@@ -18,9 +18,7 @@ size_t print_list(list_t const *h)
 			printf("[0] (nil)\n");
 		else
 		{
-			for (len = 0; h->str[len] != '\0'; len++)
-				;
-			printf("[%lu] %s\n", len, h->str);
+			printf("[%u] %.*s\n", h->len, h->len, h->str);
 		}
 		ret++;
 	}
