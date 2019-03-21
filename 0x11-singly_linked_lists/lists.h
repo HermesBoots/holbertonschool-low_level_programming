@@ -22,6 +22,7 @@ typedef struct list_s
 
 
 size_t print_list(list_t const *h);
+size_t list_len(list_t const *h);
 
 
 #endif
