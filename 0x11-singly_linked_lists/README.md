@@ -16,4 +16,7 @@ Appending to a list.
 Freeing all nodes and strings in a list.
 
 ## The Hare and the Tortoise
-Use GCC attributes to run a C function before `main` is called.
+Using GCC attributes to run a C function before `main` is called.
+
+## Real Programmers Can Write Assembly Code in Any Language
+Writing assembly code that can call C library functions.
