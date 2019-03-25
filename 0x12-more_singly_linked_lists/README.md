@@ -14,3 +14,6 @@ Appending a node to the end of a linked list.
 
 ## Free List
 Freeing a linked list of integers.
+
+## Free
+Freeing a list and indicating the list as empty.
