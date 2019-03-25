@@ -38,3 +38,6 @@ Reversing a linked list in place.
 
 ## Print (Safe Version)
 Printing a linked linked list, even if it contains a loop.
+
+## Free (Safe Version)
+Freeing a linked list, even if it contains a loop.
