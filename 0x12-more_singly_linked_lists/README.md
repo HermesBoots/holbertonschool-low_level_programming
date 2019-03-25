@@ -17,3 +17,6 @@ Freeing a linked list of integers.
 
 ## Free
 Freeing a list and indicating the list as empty.
+
+## Pop
+Popping the first element from a linked list.
