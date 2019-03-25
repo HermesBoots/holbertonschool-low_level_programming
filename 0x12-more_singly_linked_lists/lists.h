@@ -36,6 +36,8 @@ size_t do_print_list(listint_t *node, size_t count);
 size_t print_listint_safe(listint_t const *head);
 size_t do_free_list(listint_t *node, size_t count);
 size_t free_listint_safe(listint_t **h);
+listint_t *do_find_cycle(listint_t *node);
+listint_t *find_listint_loop(listint_t *head);
 
 
 #endif
