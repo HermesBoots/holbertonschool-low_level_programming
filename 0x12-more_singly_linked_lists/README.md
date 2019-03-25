@@ -32,3 +32,6 @@ Inserting a new node in a list at a given position.
 
 ## Delete at Index
 Deleting a node in a list at a given index.
+
+## Reverse List
+Reversing a linked list in place.
