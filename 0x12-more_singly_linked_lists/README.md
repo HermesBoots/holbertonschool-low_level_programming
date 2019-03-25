@@ -29,3 +29,6 @@ Calculating the sum of all items in a linked list.
 
 ## Insert
 Inserting a new node in a list at a given position.
+
+## Delete at Index
+Deleting a node in a list at a given index.
