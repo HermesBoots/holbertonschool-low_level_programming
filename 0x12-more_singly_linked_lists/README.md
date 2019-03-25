@@ -26,3 +26,6 @@ Getting a node at a specific index in a linked list.
 
 ## Sum List
 Calculating the sum of all items in a linked list.
+
+## Insert
+Inserting a new node in a list at a given position.
