@@ -35,3 +35,6 @@ Deleting a node in a list at a given index.
 
 ## Reverse List
 Reversing a linked list in place.
+
+## Print (Safe Version)
+Printing a linked linked list, even if it contains a loop.
