@@ -20,3 +20,6 @@ Freeing a list and indicating the list as empty.
 
 ## Pop
 Popping the first element from a linked list.
+
+## Get Node at Index
+Getting a node at a specific index in a linked list.
