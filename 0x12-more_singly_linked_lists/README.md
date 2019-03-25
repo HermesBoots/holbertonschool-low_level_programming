@@ -23,3 +23,6 @@ Popping the first element from a linked list.
 
 ## Get Node at Index
 Getting a node at a specific index in a linked list.
+
+## Sum List
+Calculating the sum of all items in a linked list.
