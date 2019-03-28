@@ -11,3 +11,6 @@ Getting the value of a specific bit from an integer.
 
 ## 11
 Setting a single bit in an existing integer.
+
+## 100
+Clearing a single bit in an existing integer.
