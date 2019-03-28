@@ -17,3 +17,6 @@ Clearing a single bit in an existing integer.
 
 ## 101
 Finding number of bits that differ between two integers.
+
+## Endianness
+Finding the endianness of the current machine.
