@@ -8,3 +8,6 @@ Converting a C integer to a binary string.
 
 ## 10
 Getting the value of a specific bit from an integer.
+
+## 11
+Setting a single bit in an existing integer.
