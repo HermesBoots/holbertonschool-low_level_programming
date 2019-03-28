@@ -14,3 +14,6 @@ Setting a single bit in an existing integer.
 
 ## 100
 Clearing a single bit in an existing integer.
+
+## 101
+Finding number of bits that differ between two integers.
