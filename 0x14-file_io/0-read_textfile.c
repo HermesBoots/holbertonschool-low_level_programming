@@ -19,8 +19,7 @@ ssize_t write_all(int file, char const *buffer, size_t count)
 
 	if (file < 0 || buffer == NULL || count < 1)
 		return (-1);
-	do
-	{
+	do {
 		write_now = write(
 			file,
 			&buffer[write_total],
@@ -53,18 +52,17 @@ ssize_t read_textfile(char const *filename, size_t letters)
 	file = open(filename, O_RDONLY);
 	if (file < 0)
 		return (0);
-	do
-	{
+	do {
 		count = read(file, buffer, BUFFER_SIZE);
-		if (count == 0)
+		if (count < 1)
 			break;
-		if (count < 0)
-			return (0);
 		written = write_all(STDOUT_FILENO, buffer, count);
 		if (written < 0)
-			return (0);
+			break;
 		ret += written;
 	} while (ret < letters && written == count);
 	close(file);
+	if (count < 0 || written < 0)
+		return (0);
 	return (ret);
 }

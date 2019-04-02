@@ -19,8 +19,7 @@ ssize_t write_all(int file, char const *buffer, size_t count)
 
 	if (file < 0 || buffer == NULL || count < 1)
 		return (-1);
-	do
-	{
+	do {
 		write_now = write(
 			file,
 			&buffer[write_total],
