@@ -12,9 +12,10 @@
  *
  * Return: number of bytes written
  */
-ssize_t write_all(int file, char * const buffer, ssize_t count)
+ssize_t write_all(int file, char const *buffer, size_t count)
 {
-	ssize_t write_now, write_total = 0;
+	size_t write_total = 0;
+	ssize_t write_now;
 
 	if (file < 0 || buffer == NULL || count < 1)
 		return (-1);
@@ -64,5 +65,6 @@ ssize_t read_textfile(char const *filename, size_t letters)
 			return (0);
 		ret += written;
 	} while (ret < letters && written == count);
+	close(file);
 	return (ret);
 }
