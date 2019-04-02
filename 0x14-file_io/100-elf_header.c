@@ -36,26 +36,26 @@ void print_magic2(unsigned char const *h)
 	switch (h[EI_VERSION])
 	{
 	case EV_CURRENT:
-		printf("%-35s%hd (%s)\n", "Version:", h[EI_VERSION], "current");
+		printf("  %-35s%hd (%s)\n", "Version:", h[EI_VERSION], "current");
 		break;
 	default:
-		printf("%-35s%hd (%s)\n", "Version:", h[EI_VERSION], "unknown");
+		printf("  %-35s%hd (%s)\n", "Version:", h[EI_VERSION], "unknown");
 	}
 	switch (h[EI_OSABI])
 	{
 	case ELFOSABI_SYSV:
-		printf("%-35s%s\n", "OS/ABI:", "UNIX - System V");
+		printf("  %-35s%s\n", "OS/ABI:", "UNIX - System V");
 		break;
 	case ELFOSABI_NETBSD:
-		printf("%-35s%s\n", "OS/ABI:", "UNIX - NetBSD");
+		printf("  %-35s%s\n", "OS/ABI:", "UNIX - NetBSD");
 		break;
 	case ELFOSABI_SOLARIS:
-		printf("%-35s%s\n", "OS/ABI:", "UNIX - Solaris");
+		printf("  %-35s%s\n", "OS/ABI:", "UNIX - Solaris");
 		break;
 	default:
-		printf("%-35s<unknown: %hd>\n", "OS/ABI:", h[EI_OSABI]);
+		printf("  %-35s<unknown: %hd>\n", "OS/ABI:", h[EI_OSABI]);
 	}
-	printf("%-35s%hd\n", "ABI Version:", h[EI_ABIVERSION]);
+	printf("  %-35s%hd\n", "ABI Version:", h[EI_ABIVERSION]);
 }
 
 
@@ -67,7 +67,12 @@ void print_magic(unsigned char const *header)
 {
 	unsigned char i;
 
-	printf("Magic:   ");
+	if (header[EI_CLASS] != ELFCLASS32 && header[EI_CLASS] != ELFCLASS64)
+	{
+		dprintf(STDERR_FILENO, "Error: unknown ELF class\n");
+		exit(98);
+	}
+	printf("ELF Header:\n  Magic:   ");
 	for (i = 0; i < EI_NIDENT; i++)
 	{
 		printf("%02x", header[i]);
@@ -78,25 +83,24 @@ void print_magic(unsigned char const *header)
 	switch (header[EI_CLASS])
 	{
 	case ELFCLASS32:
-		printf("%-35s%s\n", "Class:", "ELF32");
+		printf("  %-35s%s\n", "Class:", "ELF32");
 		break;
 	case ELFCLASS64:
-		printf("%-35s%s\n", "Class:", "ELF64");
+		printf("  %-35s%s\n", "Class:", "ELF64");
 		break;
 	default:
-		dprintf(STDERR_FILENO, "Error: unknown ELF class\n");
-		exit(98);
+		printf("  %-35s%s\n", "Class:", "Invalid");
 	}
 	switch (header[EI_DATA])
 	{
 	case ELFDATA2LSB:
-		printf("%-35s%s\n", "Data:", "2's complement, little endian");
+		printf("  %-35s%s\n", "Data:", "2's complement, little endian");
 		break;
 	case ELFDATA2MSB:
-		printf("%-35s%s\n", "Data:", "2's complement, big endian");
+		printf("  %-35s%s\n", "Data:", "2's complement, big endian");
 		break;
 	default:
-		printf("%-35s%s\n", "Data:", "unknown");
+		printf("  %-35s%s\n", "Data:", "unknown");
 	}
 	print_magic2(header);
 }
@@ -111,19 +115,19 @@ void print_type(unsigned char const *header)
 	switch (((Elf32_Ehdr *)header)->e_type)
 	{
 	case ET_REL:
-		printf("%-35s%s\n", "Type:", "REL (Relocatable file)");
+		printf("  %-35s%s\n", "Type:", "REL (Relocatable file)");
 		break;
 	case ET_EXEC:
-		printf("%-35s%s\n", "Type:", "EXEC (Executable file)");
+		printf("  %-35s%s\n", "Type:", "EXEC (Executable file)");
 		break;
 	case ET_DYN:
-		printf("%-35s%s\n", "Type:", "DYN (Shared object file)");
+		printf("  %-35s%s\n", "Type:", "DYN (Shared object file)");
 		break;
 	case ET_CORE:
-		printf("%-35s%s\n", "Type:", "CORE (Core file)");
+		printf("  %-35s%s\n", "Type:", "CORE (Core file)");
 		break;
 	default:
-		printf("%-35s%s\n", "Type:", "NONE (Unknown)");
+		printf("  %-35s%s\n", "Type:", "NONE (Unknown)");
 	}
 }
 
@@ -140,7 +144,7 @@ void print_entry(unsigned char const *header)
 		address = ((Elf32_Ehdr *)header)->e_entry;
 	else if (header[EI_CLASS] == ELFCLASS64)
 		address = ((Elf64_Ehdr *)header)->e_entry;
-	printf("%-35s%#lx\n", "Entry point address:", address);
+	printf("  %-35s%#lx\n", "Entry point address:", address);
 }
 
 
