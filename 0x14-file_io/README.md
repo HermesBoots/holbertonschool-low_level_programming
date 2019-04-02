@@ -8,3 +8,6 @@ Creating a file and writing initial contents.
 
 ## Speak Gently, She Can Hear
 Appending a string to an existing file.
+
+## `cp`
+Copying a file in C.
