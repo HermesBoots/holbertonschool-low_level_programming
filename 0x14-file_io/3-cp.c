@@ -33,7 +33,7 @@ void open_files(int *source, char const *spath, int *dest, char const *dpath)
 	{
 		dprintf(
 			STDERR_FILENO,
-			"Error: Can't write to file %s\n",
+			"Error: Can't write to %s\n",
 			dpath
 		);
 		exit(99);
