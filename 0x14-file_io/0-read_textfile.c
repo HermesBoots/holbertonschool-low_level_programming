@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define BUFFER_SIZE 6
+#define BUFFER_SIZE 1024
 
 
 /**
@@ -56,13 +56,14 @@ ssize_t read_textfile(char const *filename, size_t letters)
 		count = read(file, buffer, BUFFER_SIZE);
 		if (count < 1)
 			break;
+		count = ret + count < letters ? (size_t)count : letters - ret;
 		written = write_all(STDOUT_FILENO, buffer, count);
 		if (written < 0)
 			break;
 		ret += written;
 	} while (ret < letters && written == count);
-	close(file);
 	if (count < 0 || written < 0)
 		return (0);
+	close(file);
 	return (ret);
 }
