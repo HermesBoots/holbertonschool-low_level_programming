@@ -11,3 +11,6 @@ Appending a string to an existing file.
 
 ## `cp`
 Copying a file in C.
+
+## elf
+Reading the header information from an ELF file.
