@@ -141,7 +141,16 @@ void print_magic(unsigned char const *header)
  */
 void print_type(unsigned char const *header)
 {
-	switch (((Elf32_Ehdr *)header)->e_type)
+	uint16_t type;
+
+	type = ((Elf32_Ehdr *)header)->e_type;
+	if (header[EI_DATA] == ELFDATA2MSB)
+	{
+		((uint8_t *)&type)[0] ^= ((uint8_t *)&type)[1];
+		((uint8_t *)&type)[1] ^= ((uint8_t *)&type)[0];
+		((uint8_t *)&type)[0] ^= ((uint8_t *)&type)[1];
+	}
+	switch (type)
 	{
 	case ET_REL:
 		printf("  %-35s%s\n", "Type:", "REL (Relocatable file)");
@@ -159,7 +168,7 @@ void print_type(unsigned char const *header)
 		printf("  %-35s%s\n", "Type:", "NONE (None)");
 		break;
 	default:
-		printf("  %-35s<unknown>: %hx\n", "Type:", ((Elf32_Ehdr *)header)->e_type);
+		printf("  %-35s<unknown>: %hx\n", "Type:", type);
 	}
 }
 
@@ -170,12 +179,28 @@ void print_type(unsigned char const *header)
  */
 void print_entry(unsigned char const *header)
 {
+	int i, size;
 	uint64_t address;
 
 	if (header[EI_CLASS] == ELFCLASS32)
+	{
 		address = ((Elf32_Ehdr *)header)->e_entry;
+		size = 4;
+	}
 	else
+	{
 		address = ((Elf64_Ehdr *)header)->e_entry;
+		size = 8;
+	}
+	if (header[EI_DATA] == ELFDATA2MSB)
+	{
+		for (i = 0; i < size / 2; i++)
+		{
+			((uint8_t *)&address)[i] ^= ((uint8_t *)&address)[size - i - 1];
+			((uint8_t *)&address)[size - i - 1] ^= ((uint8_t *)&address)[i];
+			((uint8_t *)&address)[i] ^= ((uint8_t *)&address)[size - i - 1];
+		}
+	}
 	printf("  %-35s%#lx\n", "Entry point address:", address);
 }
 
