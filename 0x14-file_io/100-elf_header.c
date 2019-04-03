@@ -76,11 +76,8 @@ void print_magic2(unsigned char const *h)
 	case EV_CURRENT:
 		printf("  %-35s%hd (%s)\n", "Version:", h[EI_VERSION], "current");
 		break;
-	case EV_NONE:
-		printf("  %-35s%hd\n", "Version:", h[EI_VERSION]);
-		break;
 	default:
-		printf("  %-35s%hd <unknown: %%lx>\n", "Version:", h[EI_VERSION]);
+		printf("  %-35s%hd\n", "Version:", h[EI_VERSION]);
 	}
 	print_magic3(h);
 	printf("  %-35s%hd\n", "ABI Version:", h[EI_ABIVERSION]);
