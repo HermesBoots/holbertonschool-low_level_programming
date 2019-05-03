@@ -17,3 +17,6 @@ Freeing a whole list.
 
 ## Get Node at Index
 Getting a node at a given index.
+
+## Sum List
+Summing data in a list.
