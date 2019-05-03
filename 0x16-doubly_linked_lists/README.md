@@ -20,3 +20,6 @@ Getting a node at a given index.
 
 ## Sum List
 Summing data in a list.
+
+## Insert at Index
+Inserting a new node at a given index.
