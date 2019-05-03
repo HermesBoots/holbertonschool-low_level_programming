@@ -11,3 +11,6 @@ Prepending a node to a list.
 
 ## Add Node at the End
 Appending a node to a list.
+
+## Free List
+Freeing a whole list.
