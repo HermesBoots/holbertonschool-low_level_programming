@@ -23,3 +23,6 @@ Summing data in a list.
 
 ## Insert at Index
 Inserting a new node at a given index.
+
+## Delete at Index
+Deleting a node at a given index.
