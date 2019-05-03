@@ -4,4 +4,7 @@
 Printing the contents of a list.
 
 ## List Length
-Count the length of a list.
+Counting the length of a list.
+
+## Add Node
+Prepending a node to a list.
