@@ -26,3 +26,12 @@ Inserting a new node at a given index.
 
 ## Delete at Index
 Deleting a node at a given index.
+
+## Crackme4
+Cracking the password from a compiled Python file.
+
+## Palindromes
+Finding the largest palindromatic number that is a product of 3-digit numbers.
+
+## Crackme5
+Writing a key generator for an insecure executable.
