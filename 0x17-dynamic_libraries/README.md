@@ -8,3 +8,6 @@ Writing a script to create dynamic libraries.
 
 ## Let's Call C Functions from Python
 Creating a dynamic library usable in Python.
+
+## Code Injection: Win the Giga Millions!
+Injecting code into a dynamically-linked program to remove its randomness.
