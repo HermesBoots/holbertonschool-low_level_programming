@@ -85,10 +85,10 @@ int update_node(hash_node_t **previous, hash_node_t *node, char const *value)
 		);
 		if (node == NULL)
 			return (0);
+		node->key = (char *)(node + 1);
+		node->value = node->key + key_len + 1;
 		*previous = node;
 	}
-	node->key = (char *)(node + 1);
-	node->value = node->key + key_len + 1;
 	strcpy(node->value, value);
 	return (1);
 }
