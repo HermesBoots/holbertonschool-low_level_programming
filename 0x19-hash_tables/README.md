@@ -17,3 +17,6 @@ Retrieving values from the hash table.
 
 ## `>>> print(ht)`
 Printing a hash table the way Python prints dictionaries.
+
+## `>>> del ht`
+Deleting an entire hash table.
