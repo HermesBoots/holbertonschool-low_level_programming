@@ -20,3 +20,6 @@ Printing a hash table the way Python prints dictionaries.
 
 ## `>>> del ht`
 Deleting an entire hash table.
+
+## `$ht['Betty'] = 'Holberton'`
+Creating and operating on an ordered hash map.
