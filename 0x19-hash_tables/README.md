@@ -14,3 +14,6 @@ Updating values in the hash table.
 
 ## `>>> ht['betty']`
 Retrieving values from the hash table.
+
+## `>>> print(ht)`
+Printing a hash table the way Python prints dictionaries.
