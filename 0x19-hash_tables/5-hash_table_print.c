@@ -3,7 +3,7 @@
 
 
 /**
- * hash_table_print - print key-value pairs in the hash table in undefined order
+ * hash_table_print - print key-value pairs in the hash table in bucket order
  * @ht: table to print
  */
 void hash_table_print(hash_table_t const *ht)

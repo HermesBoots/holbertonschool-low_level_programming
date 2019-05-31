@@ -15,7 +15,6 @@ int hash_table_set(hash_table_t *ht, char const *key, char const *value)
 {
 	hash_node_t **list;
 	hash_node_t *previous = NULL, *node;
-	size_t key_len, val_len;
 
 	if (ht == NULL || ht->size < 1)
 		return (0);
@@ -29,18 +28,12 @@ int hash_table_set(hash_table_t *ht, char const *key, char const *value)
 		previous = node;
 	}
 	if (node != NULL)
-		return (update_node(previous, node, value));
+	{
+		if (previous == NULL)
+			return (update_node(list, node, value));
+		return (update_node(&previous->next, node, value));
+	}
 	return (add_node(list, key, value));
-	node = malloc(sizeof(hash_node_t) + key_len + val_len + 2);
-	if (node == NULL)
-		return (0);
-	node->key = (char *)(node + 1);
-	strcpy(node->key, key);
-	node->value = node->key + key_len + 1;
-	strcpy(node->value, value);
-	node->next = *list;
-	*list = node;
-	return (1);
 }
 
 
@@ -73,13 +66,13 @@ int add_node(hash_node_t **list, char const *key, char const *value)
 
 /**
  * update_node - update the value in an existing node in a bucket
- * @previous: node before this one in the bucket or NULL if this is the first
+ * @previous: the previous node's pointer to this one
  * @node: node to update
  * @value: value to put in node
  *
- * Returns: 0 if reallocation of value failes, 1 otherwise
+ * Return: 0 if reallocation of value failes, 1 otherwise
  */
-int update_node(hash_node_t *previous, hash_node_t *node, char const *value)
+int update_node(hash_node_t **previous, hash_node_t *node, char const *value)
 {
 	size_t key_len, val_len;
 
@@ -92,8 +85,7 @@ int update_node(hash_node_t *previous, hash_node_t *node, char const *value)
 		);
 		if (node == NULL)
 			return (0);
-		if (previous != NULL)
-			previous->next = node;
+		*previous = node;
 	}
 	node->key = (char *)(node + 1);
 	node->value = node->key + key_len + 1;
