@@ -11,3 +11,6 @@ Finding the index in a hash table that a key should use.
 
 ## `>>> ht['betty'] = 'holberton'`
 Updating values in the hash table.
+
+## `>>> ht['betty']`
+Retrieving values from the hash table.
