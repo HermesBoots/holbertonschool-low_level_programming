@@ -29,7 +29,7 @@ void fix_heap(int *array, size_t size, size_t root, size_t last)
 		array[root] ^= array[largest];
 		array[largest] ^= array[root];
 		array[root] ^= array[largest];
-		if (array[root] != array[largest])
+		/*if (array[root] != array[largest])*/
 			print_array(array, size);
 		root = largest;
 	} while (getLeft(root) <= last);
@@ -53,13 +53,13 @@ void heap_sort(int *array, size_t size)
 		array[0] ^= array[sorted];
 		array[sorted] ^= array[0];
 		array[0] ^= array[sorted];
-		if (array[0] != array[sorted])
+		/*if (array[0] != array[sorted])*/
 			print_array(array, size);
 		fix_heap(array, size, 0, sorted - 1);
 	}
 	array[0] ^= array[1];
 	array[1] ^= array[0];
 	array[0] ^= array[1];
-	if (array[0] != array[1])
+	/*if (array[0] != array[1])*/
 		print_array(array, size);
 }
