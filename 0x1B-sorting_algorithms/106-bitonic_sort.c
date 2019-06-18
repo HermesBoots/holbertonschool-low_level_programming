@@ -6,6 +6,13 @@
 	a ^= b; \
 } while (0)
 
+/**
+ * do_bitonic_sort - recursive helper function for bitonic_sort
+ * @array: array to sort
+ * @size: total size of array
+ * @sublen: size of partition to sort
+ * @increasing: whether to sort in increasing or decreasing order
+ */
 void do_bitonic_sort(int *array, st size, st start, st sublen, char increasing)
 {
 	size_t i, step;

@@ -40,5 +40,6 @@ void print_array(const int *array, size_t size);
 void do_merge_sort(int *, int *, size_t, size_t, size_t);
 void do_quick_sort(int *array, size_t size, size_t start, size_t stop);
 void fix_heap(int *array, size_t size, size_t root, size_t last);
+void do_bitonic_sort(int *, size_t, size_t, size_t, char);
 
 #endif /* SORT_H */
