@@ -5,6 +5,13 @@
 #define getLeft(i) (2 * (i) + 1)
 #define getRight(i) (2 * (i) + 2)
 
+/**
+ * fix_heap - repair a branch of an array-based heap
+ * @array: array containing heap
+ * @size: total size of array
+ * @root: index of root node of heap
+ * @last: index of last node in heap to examine
+ */
 void fix_heap(int *array, size_t size, size_t root, size_t last)
 {
 	size_t largest, left, right;
@@ -29,14 +36,16 @@ void fix_heap(int *array, size_t size, size_t root, size_t last)
 }
 
 /**
- * heap_sort -
- *
- * Return: 
+ * heap_sort - use heap sort
+ * @array: array to sort
+ * @size: size of array
  */
 void heap_sort(int *array, size_t size)
 {
 	size_t node, sorted;
 
+	if (array == NULL || size < 2)
+		return;
 	for (node = getParent(size - 1); node != SIZE_MAX; node--)
 		fix_heap(array, size, node, size - 1);
 	for (sorted = size - 1; sorted > 1; sorted--)
