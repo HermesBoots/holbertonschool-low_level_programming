@@ -10,6 +10,7 @@
  * do_bitonic_sort - recursive helper function for bitonic_sort
  * @array: array to sort
  * @size: total size of array
+ * @start: start index of partition
  * @sublen: size of partition to sort
  * @increasing: whether to sort in increasing or decreasing order
  */
