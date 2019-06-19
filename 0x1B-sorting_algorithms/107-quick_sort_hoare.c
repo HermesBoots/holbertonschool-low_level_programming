@@ -23,7 +23,8 @@ void do_quick_sort2(int *array, size_t size, size_t start, size_t stop)
 			array[left] ^= array[right];
 			array[right] ^= array[left];
 			array[left] ^= array[right];
-			print_array(array, size);
+			if (array[left] != array[right])
+				print_array(array, size);
 			left++;
 		}
 		if (array[left] < pivot)
