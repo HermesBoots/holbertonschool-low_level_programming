@@ -1,5 +1,17 @@
-#include "sort.h"
+#include "deck.h"
 
+#define NULL ((void *)0)
+
+/**
+ * sort_deck - sort a deck of cards
+ * @deck: dptr to a dll representing a deck of cards
+ */
+void sort_deck(deck_node_t **deck)
+{
+	if (deck == NULL || *deck == NULL || (*deck)->next == NULL)
+		return;
+	insertion_sort_list(deck);
+}
 
 /**
  * cast_card - convert a card structure to a byte
@@ -43,13 +55,39 @@ unsigned char cast_card(card_t card)
 	return (ret);
 }
 
-
 /**
- * sort_deck -
- *
- * Return: 
+ * insertion_sort_list - sort doubly linked list via insertion sort
+ * @list: double pointer to a dll
+ * Return: void
  */
-void sort_deck(deck_node_t **deck)
+void insertion_sort_list(deck_node_t **list)
 {
+	deck_node_t *fp, *cfp, *bp;
 
+	for (cfp = fp = (*list)->next; cfp != NULL; cfp = fp = cfp->next)
+	{
+		bp = fp->prev;
+		while (bp != NULL && cast_card(*fp->card) < cast_card(*bp->card))
+			bp = bp->prev;
+		if (bp == fp->prev)
+			continue;
+		cfp = fp->prev;
+		if (fp->next != NULL)
+			fp->next->prev = fp->prev;
+		fp->prev->next = fp->next;
+		if (bp != NULL)
+		{
+			fp->next = bp->next;
+			fp->prev = bp;
+			bp->next = fp;
+			fp->next->prev = fp;
+		}
+		else
+		{
+			fp->prev = NULL;
+			fp->next = *list;
+			(*list)->prev = fp;
+			*list = fp;
+		}
+	}
 }

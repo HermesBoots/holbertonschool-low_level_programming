@@ -4,7 +4,7 @@
 	a ^= b; \
 	b ^= a; \
 	a ^= b; \
-} while (0)
+	} while (0)
 
 /**
  * do_bitonic_sort - recursive helper function for bitonic_sort
