@@ -1,14 +1,13 @@
 CC = gcc
 NAME = holberton
-OBJ = $(patsubst %.c, %.o, $(wildcard *.c))
 RM = rm
-SRC = *.c
+SRC = main.c holberton.c
+OBJ = $(SRC:%.c=%.o)
 
-%.o: %.c m.h
-	$(CC) -c -o $@ $<
+$(OBJ): m.h
 
 all: $(OBJ)
-	$(CC) -o $(NAME) $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) -f *~ $(NAME)
