@@ -1,0 +1,21 @@
+CC = gcc
+NAME = holberton
+OBJ = $(patsubst %.c, %.o, $(wildcard *.c))
+RM = rm
+SRC = *.c
+
+%.o: %.c m.h
+	$(CC) -c -o $@ $<
+
+all: $(OBJ)
+	$(CC) -o $(NAME) $(OBJ)
+
+clean:
+	$(RM) -f *~ $(NAME)
+
+oclean:
+	$(RM) -f $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
