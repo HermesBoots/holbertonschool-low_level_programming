@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module to find the perimeter of an island in an ocean"""
 
+
 def get_neighbors(grid, square):
     """Get a list of cells neighboring another cell
 
@@ -31,6 +32,7 @@ def get_neighbors(grid, square):
     else:
         west = grid[square[1]][square[0] - 1]
     return (north, east, south, west)
+
 
 def island_perimeter(grid):
     """Return the perimeter of an island in an ocean grid
