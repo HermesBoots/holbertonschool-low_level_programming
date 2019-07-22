@@ -26,3 +26,6 @@ Call a function on every node in the three in-order.
 
 ## Post-Order Traversal
 Call a function on every node in the tree in post-order.
+
+## Height
+Measure the height of a binary tree.
