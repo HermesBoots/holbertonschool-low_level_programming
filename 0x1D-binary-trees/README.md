@@ -20,3 +20,6 @@ Check if a node is the root of a tree.
 
 ## Pre-Order Traversal
 Call a function on every node in the tree in pre-order.
+
+## In-Order Traversal
+Call a function on every node in the three in-order.

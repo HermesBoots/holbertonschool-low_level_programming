@@ -3,6 +3,11 @@
 #define NULL ((void *)0)
 
 
+/**
+ * binary_tree_preorder - operate on a tree in pre-order
+ * @tree: tree to process
+ * @func: function to call on each node
+ */
 void binary_tree_preorder(binary_tree_t const *tree, void (*func)(int))
 {
 	func(tree->n);
