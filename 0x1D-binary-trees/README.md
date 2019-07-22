@@ -29,3 +29,6 @@ Call a function on every node in the tree in post-order.
 
 ## Height
 Measure the height of a binary tree.
+
+## Depth
+Measure the depth of a node in a binary tree.
