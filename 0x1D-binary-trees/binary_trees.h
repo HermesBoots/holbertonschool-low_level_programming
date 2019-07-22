@@ -44,5 +44,6 @@ size_t binary_tree_leaves(binary_tree_t const *tree);
 size_t binary_tree_nodes(binary_tree_t const *tree);
 int binary_tree_balance(binary_tree_t const *tree);
 int binary_tree_is_full(binary_tree_t const *tree);
+int binary_tree_is_perfect(binary_tree_t const *tree);
 
 #endif

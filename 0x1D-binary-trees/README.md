@@ -47,3 +47,6 @@ Compare the heights of the left and right branches of a node.
 
 ## Is Full
 Check if every node in a tree has 0 or 2 children.
+
+## Is Perfect
+Check if every subtree is balanced and every node as 0 or 2 children.
