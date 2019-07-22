@@ -14,3 +14,6 @@ Delete an entire binary tree.
 
 ## Is Leaf
 Check if a node in a binary tree is childless.
+
+## Is Root
+Check if a node is the root of a tree.
