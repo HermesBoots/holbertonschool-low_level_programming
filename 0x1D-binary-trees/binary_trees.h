@@ -31,6 +31,7 @@ void binary_tree_delete(binary_tree_t *tree);
 int binary_tree_is_leaf(binary_tree_t const *node);
 int binary_tree_is_root(binary_tree_t const *node);
 void binary_tree_preorder(binary_tree_t const *tree, void (*func)(int));
-void binary_tree_inorder(binary_tree_t const *tree, void (*funct)(int));
+void binary_tree_inorder(binary_tree_t const *tree, void (*func)(int));
+void binary_tree_postorder(binary_tree_t const *tree, void (*func)(int));
 
 #endif

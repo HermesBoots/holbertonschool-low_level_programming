@@ -23,3 +23,6 @@ Call a function on every node in the tree in pre-order.
 
 ## In-Order Traversal
 Call a function on every node in the three in-order.
+
+## Post-Order Traversal
+Call a function on every node in the tree in post-order.
