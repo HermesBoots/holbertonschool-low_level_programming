@@ -32,3 +32,6 @@ Measure the height of a binary tree.
 
 ## Depth
 Measure the depth of a node in a binary tree.
+
+## Size
+Count the number of nodes in a binary tree.
