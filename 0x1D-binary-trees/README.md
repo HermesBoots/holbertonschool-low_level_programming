@@ -44,3 +44,6 @@ Count the number of nodes with children in a binary tree.
 
 ## Balance Factor
 Compare the heights of the left and right branches of a node.
+
+## Is Full
+Check if every node in a tree has 0 or 2 children.
