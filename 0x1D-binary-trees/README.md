@@ -53,3 +53,6 @@ Check if every subtree is balanced and every node as 0 or 2 children.
 
 ## Sibling
 Get the sibling of a node in a tree.
+
+## Uncle
+Get the uncle of a node in a tree.
