@@ -17,3 +17,6 @@ Check if a node in a binary tree is childless.
 
 ## Is Root
 Check if a node is the root of a tree.
+
+## Pre-Order Traversal
+Call a function on every node in the tree in pre-order.
