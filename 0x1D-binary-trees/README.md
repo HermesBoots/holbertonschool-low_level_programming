@@ -11,3 +11,6 @@ Add a new node as the right child of another node, maintaining its previous chil
 
 ## Delete
 Delete an entire binary tree.
+
+## Is Leaf
+Check if a node in a binary tree is childless.
