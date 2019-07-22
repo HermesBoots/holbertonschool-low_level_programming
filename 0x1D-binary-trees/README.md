@@ -41,3 +41,6 @@ Count the number of childless nodes in a binary tree.
 
 ## Nodes
 Count the number of nodes with children in a binary tree.
+
+## Balance Factor
+Compare the heights of the left and right branches of a node.
