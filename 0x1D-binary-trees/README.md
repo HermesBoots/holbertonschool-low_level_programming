@@ -38,3 +38,6 @@ Count the number of nodes in a binary tree.
 
 ## Leaves
 Count the number of childless nodes in a binary tree.
+
+## Nodes
+Count the number of nodes with children in a binary tree.

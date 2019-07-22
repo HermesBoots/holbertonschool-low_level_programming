@@ -1,6 +1,5 @@
+#include <stddef.h>
 #include "binary_trees.h"
-
-#define NULL ((void *)0)
 
 
 /**
