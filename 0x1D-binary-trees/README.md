@@ -68,3 +68,6 @@ Check if tree as less than 2 nodes with 1 child and all subtrees are left-balanc
 
 ## Rotate Left
 Rotate a binary tree to the left once.
+
+## Rotate Right
+Rotate a binary tree to the right once.
