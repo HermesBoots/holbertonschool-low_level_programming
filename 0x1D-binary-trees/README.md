@@ -83,3 +83,6 @@ Create a new binary search tree containing all values from a given array.
 
 ## BST - Search
 Search for a value in a binary search tree.
+
+## BST - Remove
+Remove an item from a binary search tree by value.
