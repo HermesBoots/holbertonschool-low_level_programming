@@ -56,3 +56,6 @@ Get the sibling of a node in a tree.
 
 ## Uncle
 Get the uncle of a node in a tree.
+
+## Lowest Common Ancestor
+Find the lowest common ancestor of two nodes.
