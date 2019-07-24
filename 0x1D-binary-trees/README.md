@@ -71,3 +71,6 @@ Rotate a binary tree to the left once.
 
 ## Rotate Right
 Rotate a binary tree to the right once.
+
+## Is BST
+Check if a binary tree is a valid binary search tree.
