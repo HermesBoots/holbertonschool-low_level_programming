@@ -77,3 +77,6 @@ Check if a binary tree is a valid binary search tree.
 
 ## BST - Insert
 Insert a new value into a binary search tree.
+
+## BST - Array to BST
+Create a new binary search tree containing all values from a given array.
