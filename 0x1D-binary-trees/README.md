@@ -62,3 +62,6 @@ Find the lowest common ancestor of two nodes.
 
 ## Level-Order Traversal
 Call a function on all nodes in a tree in level-order.
+
+## Is Complete
+Check if tree as less than 2 nodes with 1 child and all subtrees are left-balanced.
