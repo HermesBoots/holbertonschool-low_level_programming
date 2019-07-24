@@ -74,3 +74,6 @@ Rotate a binary tree to the right once.
 
 ## Is BST
 Check if a binary tree is a valid binary search tree.
+
+## BST - Insert
+Insert a new value into a binary search tree.
