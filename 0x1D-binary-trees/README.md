@@ -89,3 +89,6 @@ Remove an item from a binary search tree by value.
 
 ## Big O #BST
 The complexities of search, insert, and remove operations on binary search trees.
+
+## Is AVL
+Check if a binary tree is an AVL tree.
