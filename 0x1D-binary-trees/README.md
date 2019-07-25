@@ -86,3 +86,6 @@ Search for a value in a binary search tree.
 
 ## BST - Remove
 Remove an item from a binary search tree by value.
+
+## Big O #BST
+The complexities of search, insert, and remove operations on binary search trees.
