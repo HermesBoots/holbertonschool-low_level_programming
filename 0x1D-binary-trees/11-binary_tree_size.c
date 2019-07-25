@@ -5,7 +5,6 @@
 /**
  * binary_tree_size - count the nodes in a binary tree
  * @tree: tree to process
- * @size: number of nodes so far
  * Return: number of nodes in tree
  */
 size_t binary_tree_size(binary_tree_t const *tree)

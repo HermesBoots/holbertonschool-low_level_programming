@@ -47,8 +47,7 @@ bst_t *bst_remove(bst_t *root, int value)
 			next->parent->right = next->left;
 			next->left = node->left;
 		}
-		next->parent = node->parent;
-		next->right = node->right;
+		next->parent = node->parent, next->right = node->right;
 	}
 	else if (node->right != NULL)
 	{
@@ -59,8 +58,7 @@ bst_t *bst_remove(bst_t *root, int value)
 			next->parent->left = next->right;
 			next->right = node->right;
 		}
-		next->parent = node->parent;
-		next->left = node->left;
+		next->parent = node->parent, next->left = node->left;
 	}
 	if (node->parent != NULL && node->parent->left == node)
 		node->parent->left = next;
