@@ -92,3 +92,6 @@ The complexities of search, insert, and remove operations on binary search trees
 
 ## Is AVL
 Check if a binary tree is an AVL tree.
+
+## AVL - Insert
+Insert a new value into an AVL tree without breaking it.
