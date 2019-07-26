@@ -96,5 +96,11 @@ Check if a binary tree is an AVL tree.
 ## AVL - Insert
 Insert a new value into an AVL tree without breaking it.
 
+## AVL - Array to AVL
+Create an AVL tree based on an unsorted array.
+
 ## AVL - From Sorted Array
 Create an AVL tree based on a sorted array without rotating the tree at all.
+
+## Big O #AVL Tree
+Complexities of operations on AVL trees.
