@@ -31,5 +31,5 @@ size_t binary_tree_height(binary_tree_t const *tree)
 {
 	if (tree == NULL)
 		return (0);
-	return (do_tree_height(tree, 0));
+	return (do_tree_height(tree, -1));
 }
