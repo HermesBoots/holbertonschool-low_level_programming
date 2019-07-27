@@ -4,46 +4,35 @@
 
 
 /**
- * do_tree_height - recursive helper function for binary_tree_height
- * @tree: tree to measure
- * @height: height so far
- * Return: height of this branch of the tree
- */
-size_t do_tree_height(binary_tree_t const *tree, size_t height)
-{
-	size_t left = 0, right = 0;
-
-	height++;
-	if (tree->left != NULL)
-		left = do_tree_height(tree->left, height);
-	if (tree->right != NULL)
-		right = do_tree_height(tree->right, height);
-	if (left == 0 && right == 0)
-		return (height);
-	return (left > right ? left : right);
-}
-
-/**
- * binary_tree_height - measure the height of a binary tree
- * @tree: tree to measure
- * Return: height of the tree
- */
-size_t binary_tree_height(binary_tree_t const *tree)
-{
-	if (tree == NULL)
-		return (0);
-	return (do_tree_height(tree, 0));
-}
-
-
-/**
- * binary_tree_balance - compute the balance factor of a binary tree
- * @tree: tree to process
- * Return: height of left branch minus height of right branch
+ * binary_tree_balance - compare the number of nodes in subtrees
+ * @tree: tree to compare
+ * Return: number of nodes in left subtree - number in right subtree
  */
 int binary_tree_balance(binary_tree_t const *tree)
 {
-	return (binary_tree_height(tree->left) - binary_tree_height(tree->right));
+	if (tree == NULL)
+		return (0);
+	return (binary_tree_size(tree->left) - binary_tree_size(tree->right));
+}
+
+/**
+ * binary_tree_size - count the nodes in a binary tree
+ * @tree: tree to process
+ * Return: number of nodes in tree
+ */
+size_t binary_tree_size(binary_tree_t const *tree)
+{
+	size_t left = 0, right = 0;
+
+	if (tree == NULL)
+		return (0);
+	if (tree->left != NULL)
+		left = binary_tree_size(tree->left);
+	if (tree->right != NULL)
+		right = binary_tree_size(tree->right);
+	if (left == 0 && right == 0)
+		return (1);
+	return (1 + left + right);
 }
 
 
