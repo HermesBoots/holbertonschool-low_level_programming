@@ -14,3 +14,6 @@ Perform a jump search of a sorted array.
 
 ## Jump Search in a Singly Linked List
 Using jump search with a singly-linked list to demonstrate its inefficiency.
+
+## Linear Search in a Skip List
+Using a linked list crafted to make jump search efficient.
