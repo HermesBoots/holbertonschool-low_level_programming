@@ -3,7 +3,7 @@
 
 
 /**
- * print_mem_range - print all integers between 2 addresses
+ * print_mem_range_advanced - print all integers between 2 addresses
  * @left: pointer to first element to print
  * @right: address after last element to print
  */
@@ -57,5 +57,5 @@ int do_advanced_binary(int *array, size_t left, size_t right, int value)
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	return do_advanced_binary(array, 0, size, value);
+	return (do_advanced_binary(array, 0, size, value));
 }
