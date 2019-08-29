@@ -12,6 +12,9 @@ Finding the big O space and time complexities of various algorithms.
 ## Jump Search
 Perform a jump search of a sorted array.
 
+## Advanced Binary Search
+Do a binary search, but always return the index of the first occurrence of the value.
+
 ## Exponential Search
 Perform an exponential search on a finite array.
 
