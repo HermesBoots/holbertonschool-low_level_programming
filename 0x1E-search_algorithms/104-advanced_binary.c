@@ -34,9 +34,9 @@ int do_advanced_binary(int *array, size_t left, size_t right, int value)
 {
 	size_t middle;
 
-	print_mem_range_advanced(array + left, array + right);
 	if (left >= right)
 		return (-1);
+	print_mem_range_advanced(array + left, array + right);
 	middle = left + (right - left - 1) / 2;
 	if (array[middle] > value)
 		return (do_advanced_binary(array, left, middle, value));
